@@ -9,7 +9,7 @@ import { roomsType } from '../types';
 function Apartment(item: roomsType) {
   const navigation = useNavigation<StackNavigationProp<ParamListBase>>();
   const onPressHandler = () => {
-    navigation.navigate('Details');
+    navigation.navigate('Details', { item });
   };
   return (
     <Pressable onPress={onPressHandler}>

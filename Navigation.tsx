@@ -6,6 +6,8 @@ import Home from './screens/Home';
 import Profile from './screens/Profile';
 import WishList from './screens/WishList';
 import Details from './screens/Details';
+import Map from './screens/Map';
+import WishListProvider from './context/wishlistcontext';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -56,15 +58,21 @@ function BottomTabs() {
 
 function Navigation() {
   return (
-    <NavigationContainer theme={MyTheme}>
-      <Stack.Navigator screenOptions={{ ...TransitionPresets.SlideFromRightIOS }}>
-        <Stack.Screen options={{ headerShown: false }} name="Bottomtabs" component={BottomTabs}/>
-        <Stack.Screen options={{
+    <WishListProvider>
+      <NavigationContainer theme={MyTheme}>
+        <Stack.Navigator screenOptions={{ ...TransitionPresets.SlideFromRightIOS }}>
+          <Stack.Screen options={{ headerShown: false }} name="Bottomtabs" component={BottomTabs}/>
+          <Stack.Screen options={{
+          headerShown: false,
+        }}
+            name="Details" component={Details} />
+          <Stack.Screen options={{
           headerBackTitle: 'Back',
         }}
-          name="Details" component={Details} />
-      </Stack.Navigator>
-    </NavigationContainer>
+            name="Map" component={Map} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </WishListProvider>
   );
 }
 

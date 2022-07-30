@@ -9,10 +9,15 @@ export type roomsType = {
     bathrooms: string,
     price: string,
   },
+  latitude: number,
   longitude: number,
-  latittude: number,
   images: Array<{
     imId: number,
     url:string,
   }>
 };
+
+export interface imagesType {
+  imId: number,
+  url:string,
+}

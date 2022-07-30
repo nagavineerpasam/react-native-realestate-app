@@ -61,6 +61,8 @@
         "react/style-prop-object": "off",
         "react/jsx-one-expression-per-line": "off",
         "import/no-extraneous-dependencies": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": ["error"],
         "no-use-before-define":"off", // need to remove this
         "react/no-unstable-nested-components": [
             "error",

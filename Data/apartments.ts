@@ -1,8 +1,9 @@
+/* eslint-disable max-len */
 const FLATDATA = [
   {
     id: 1,
     name: 'Luxury Villa with pool',
-    description: 'Interior of studio apartment with spacious kitchen and dining room',
+    description: 'The apartment consists of a large bright bedroom with a comfy king-sized bed, a modern fully-equipped kitchen and a sunlit living room with Apple TV and free Netflix account. It is the perfect place to stay for couples looking for a romantic location in the historic centre, within walking distance of some of the most beautiful sceneries you can find in the city and all famous landmarks. The sofa in the living room can also serve as an additional bed for a 3rd guest',
     location: 'Toronto, ON, Canada',
     details: {
       guests: '2',
@@ -10,12 +11,12 @@ const FLATDATA = [
       bathrooms: '1',
       price: '$1000',
     },
-    longitude: 43.653226,
-    latittude: -79.3831843,
+    latitude: 12.9716,
+    longitude: 77.5946,
     images: [
       {
         imId: 1,
-        url: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800',
+        url: 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
       },
       {
         imId: 2,
@@ -23,7 +24,7 @@ const FLATDATA = [
       },
       {
         imId: 3,
-        url: 'https://i.pinimg.com/originals/ef/83/e6/ef83e6d8f83b50bbc4aba716c5dd909a.jpg',
+        url: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800',
       },
       {
         imId: 4,
@@ -43,11 +44,11 @@ const FLATDATA = [
       price: '$1200',
     },
     longitude: 1.391793,
-    latittude: 103.879652,
+    latitude: 103.879652,
     images: [
       {
         imId: 1,
-        url: 'https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=800',
+        url: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800',
       },
       {
         imId: 2,
@@ -67,7 +68,7 @@ const FLATDATA = [
       price: '$1500',
     },
     longitude: 1.093100,
-    latittude: 104.530553,
+    latitude: 104.530553,
     images: [{
       imId: 1,
       url: 'https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -85,7 +86,7 @@ const FLATDATA = [
       price: '$1070',
     },
     longitude: 0,
-    latittude: 0,
+    latitude: 0,
     images: [{
       imId: 1,
       url: 'https://i.pinimg.com/originals/ef/83/e6/ef83e6d8f83b50bbc4aba716c5dd909a.jpg',
@@ -103,7 +104,7 @@ const FLATDATA = [
       price: '$2000',
     },
     longitude: 0,
-    latittude: 0,
+    latitude: 0,
     images: [{
       imId: 1,
       url: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -121,7 +122,7 @@ const FLATDATA = [
       price: '',
     },
     longitude: 0,
-    latittude: 0,
+    latitude: 0,
     images: [{
       imId: 1,
       url: 'https://images.pexels.com/photos/1456293/pexels-photo-1456293.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -139,7 +140,7 @@ const FLATDATA = [
       price: '',
     },
     longitude: 0,
-    latittude: 0,
+    latitude: 0,
     images: [{
       imId: 1,
       url: 'https://images.pexels.com/photos/3601420/pexels-photo-3601420.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
@@ -157,7 +158,7 @@ const FLATDATA = [
       price: '',
     },
     longitude: 0,
-    latittude: 0,
+    latitude: 0,
     images: [{
       imId: 1,
       url: 'https://images.pexels.com/photos/980826/pexels-photo-980826.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
