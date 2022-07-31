@@ -32,3 +32,4 @@ Either open in andriod simulator or Xcode
 Another option is to open on Expo go app (available in Play Store and App Store)
 Scan the QR code shown in the terminal(paste url) using Expo Go app
 ```
+Note: Images are taken from pexels
