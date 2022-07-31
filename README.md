@@ -4,7 +4,10 @@
 </p>
 
 <p align="center">
-  <img src="./assets/home.png" style="border-radius: 10px;" />
+  <img src="./assets/Home.png" style="border-radius: 10px; height: 300px" />
+  <img src="./assets/Home.png" style="border-radius: 10px; height: 300px" />
+  <img src="./assets/Home.png" style="border-radius: 10px; height: 300px" />
+  <img src="./assets/Home.png" style="border-radius: 10px; height: 300px" />
 </p>
 
 
