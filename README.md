@@ -1,6 +1,6 @@
-<h1 align="center"><b>🏡 Real Estate App</b></h1>
+<h1 align="center"><b>🏡 Real Estate Mobile App</b></h1>
 <p align="center">
-  A Real Estate App built with React Native
+  A Real Estate App built with React Native(supports both IOS and Andriod)
 </p>
 
 <p align="center">
