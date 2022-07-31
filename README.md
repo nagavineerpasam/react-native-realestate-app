@@ -5,9 +5,9 @@
 
 <p align="center">
   <img src="./assets/Home.png" style="border-radius: 10px; height: 300px" />
-  <img src="./assets/Home.png" style="border-radius: 10px; height: 300px" />
-  <img src="./assets/Home.png" style="border-radius: 10px; height: 300px" />
-  <img src="./assets/Home.png" style="border-radius: 10px; height: 300px" />
+  <img src="./assets/apartment.png" style="border-radius: 10px; height: 300px" />
+  <img src="./assets/wishlist.png" style="border-radius: 10px; height: 300px" />
+  <img src="./assets/maps.png" style="border-radius: 10px; height: 300px" />
 </p>
 
 
@@ -23,4 +23,12 @@ npm install
 
 ```bash
 npm start
+```
+
+**3.  To view the app locally**
+
+```
+Either open in andriod simulator or Xcode
+Another option is to open on Expo go app (available in Play Store and App Store)
+Scan the QR code shown in the terminal(paste url) using Expo Go app
 ```
