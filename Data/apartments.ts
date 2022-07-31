@@ -11,8 +11,8 @@ const FLATDATA = [
       bathrooms: '1',
       price: '$1000',
     },
-    latitude: 12.9716,
-    longitude: 77.5946,
+    latitude: 0,
+    longitude: 0,
     images: [
       {
         imId: 1,
@@ -20,7 +20,7 @@ const FLATDATA = [
       },
       {
         imId: 2,
-        url: 'https://i.pinimg.com/originals/ef/83/e6/ef83e6d8f83b50bbc4aba716c5dd909a.jpg',
+        url: 'https://images.pexels.com/photos/1669799/pexels-photo-1669799.jpeg?auto=compress&cs=tinysrgb&w=800',
       },
       {
         imId: 3,
@@ -89,7 +89,7 @@ const FLATDATA = [
     latitude: 0,
     images: [{
       imId: 1,
-      url: 'https://i.pinimg.com/originals/ef/83/e6/ef83e6d8f83b50bbc4aba716c5dd909a.jpg',
+      url: 'https://images.pexels.com/photos/980826/pexels-photo-980826.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load',
     }],
   },
   {

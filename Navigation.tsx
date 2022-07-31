@@ -63,12 +63,12 @@ function Navigation() {
         <Stack.Navigator screenOptions={{ ...TransitionPresets.SlideFromRightIOS }}>
           <Stack.Screen options={{ headerShown: false }} name="Bottomtabs" component={BottomTabs}/>
           <Stack.Screen options={{
-          headerShown: false,
-        }}
+              headerShown: false,
+            }}
             name="Details" component={Details} />
           <Stack.Screen options={{
-          headerBackTitle: 'Back',
-        }}
+              headerBackTitle: 'Back',
+            }}
             name="Map" component={Map} />
         </Stack.Navigator>
       </NavigationContainer>

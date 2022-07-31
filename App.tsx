@@ -4,7 +4,6 @@ import 'react-native-gesture-handler';
 
 export default function App() {
   return (
-
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle='default'/>
       <Navigation/>

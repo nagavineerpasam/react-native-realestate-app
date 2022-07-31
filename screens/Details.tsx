@@ -2,12 +2,13 @@ import {
   ParamListBase, RouteProp, useNavigation, useRoute,
 } from '@react-navigation/native';
 import {
+  ActivityIndicator,
   Image,
   ImageBackground, Pressable, ScrollView, StyleSheet, Text, TouchableOpacity, View,
 } from 'react-native';
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { roomsType } from '../types';
 import { WishListContext } from '../context/wishlistcontext';
 
@@ -23,6 +24,8 @@ function Details() {
   const wishListContext = useContext(WishListContext);
   const route = useRoute<RouteProp<ParamList, 'Details'>>();
   const navigation = useNavigation<StackNavigationProp<ParamListBase>>();
+  const [isLoading, setIsLoading] = useState(false);
+  const [isBooked, setIsBooked] = useState(false);
   const apartmentDetails = route.params.item;
   const isInWishList = wishListContext.wishListIds.includes(apartmentDetails.id);
 
@@ -40,6 +43,14 @@ function Details() {
     } else {
       wishListContext.addToWishList(apartmentDetails.id);
     }
+  };
+
+  const onBookHandler = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      setIsBooked(true);
+    }, 2000);
   };
 
   return (
@@ -98,11 +109,16 @@ function Details() {
           <Text style={styles.price}>{apartmentDetails.details.price}/month</Text>
         </View>
         <View>
-          <TouchableOpacity activeOpacity={0.8}>
+          {isBooked
+          ? <Text style={styles.bookedText}>Booked Successfully</Text>
+          : <TouchableOpacity onPress={onBookHandler} activeOpacity={0.8}>
             <View style={styles.btn}>
-              <Text style={styles.pay}>Proceed</Text>
+              {isLoading
+              ? <ActivityIndicator style={styles.activityIndicator} size="small" color='white' />
+              : <Text style={styles.pay}>Book Now</Text>}
             </View>
           </TouchableOpacity>
+          }
         </View>
       </View>
     </View>
@@ -110,6 +126,12 @@ function Details() {
 }
 
 const styles = StyleSheet.create({
+  bookedText: {
+    fontSize: 18,
+    color: 'green',
+    marginVertical: 12,
+    fontWeight: '600',
+  },
   price: {
     fontSize: 20,
     fontWeight: '400',
@@ -119,6 +141,10 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: 'white',
     fontWeight: '600',
+    marginVertical: 12,
+    textAlign: 'center',
+  },
+  activityIndicator: {
     marginVertical: 12,
     textAlign: 'center',
   },

@@ -11,6 +11,7 @@ type apartmentsListType = {
 
 function ApartmentsList({ apartmentsListData, title }: apartmentsListType) {
   const renderItem: ListRenderItem<roomsType> = ({ item }) => <Apartment {...item}/>;
+
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.container}>
@@ -23,7 +24,7 @@ function ApartmentsList({ apartmentsListData, title }: apartmentsListType) {
             renderItem={renderItem}
             keyExtractor={(item: roomsType) => item.id.toString()}
             showsVerticalScrollIndicator={false}
-          />
+        />
         </View>
       </View>
     </SafeAreaView>
