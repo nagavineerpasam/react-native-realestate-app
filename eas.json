@@ -1,0 +1,34 @@
+{
+  "cli": {
+    "version": ">= 0.56.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "releaseChannel": "staging",
+      "env": {
+        "POSTS_URL1": "https://jsonplaceholder.typicode.com/posts/1",
+        "POSTS_URL2": "https://jsonplaceholder.typicode.com/posts/2"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "releaseChannel": "production",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "POSTS_URL1": "https://jsonplaceholder.typicode.com/posts/3",
+        "POSTS_URL2": "https://jsonplaceholder.typicode.com/posts/4"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

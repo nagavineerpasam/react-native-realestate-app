@@ -11,8 +11,8 @@ const FLATDATA = [
       bathrooms: '1',
       price: '$1000',
     },
-    latitude: 0,
-    longitude: 0,
+    latitude: 12.9716,
+    longitude: 77.5946,
     images: [
       {
         imId: 1,
