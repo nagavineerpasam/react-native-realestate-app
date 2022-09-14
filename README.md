@@ -25,7 +25,7 @@ npm install
 npm start
 ```
 
-**3.  To view the app locally**
+**3.  To view/run the app locally**
 
 ```
 Either open in andriod simulator or Xcode
